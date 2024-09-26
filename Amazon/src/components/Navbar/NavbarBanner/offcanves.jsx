@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import ReorderIcon from '@mui/icons-material/Reorder';
+import Categories from '../../Categories/CategoriesList';
 function Offcanvastool() {
   const [show, setShow] = useState(false);
 
@@ -19,8 +20,7 @@ function Offcanvastool() {
           <Offcanvas.Title>Offcanvas</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
+      <Categories/>
         </Offcanvas.Body>
       </Offcanvas>
     </>

@@ -54,25 +54,15 @@ function Categories() {
 
   return (
     <div className="categories-container">
-      {loading ? (
-        <Loadingcase /> 
-      ) : (
-        categories.map((category, index) => (
-          <div key={index} className="category-section p-4">
-            <h2 className="p-1 mx-3">{category}</h2>
-            <div className="products-grid d-flex flex-wrap">
-              {products
-                .filter((product) => product.category === category)
-                .slice(0, 4) 
-                .map((product, index) => (
-                  <Card key={index} className="product-card">
-                    <Card.Img variant="top" src={product.image} className="product-image" />
-                  </Card>
-                ))}
-            </div>
-          </div>
-        ))
-      )}
+    
+    {categories.map((category, index) => (
+            <button className='btn btn-outline-danger'  key={index}
+              style={{ marginBottom: '10px', width: '100%' }}
+             
+            >
+              {category}
+            </button>
+          ))}
     </div>
   );
 }
