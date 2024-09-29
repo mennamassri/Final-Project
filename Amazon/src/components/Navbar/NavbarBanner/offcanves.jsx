@@ -17,9 +17,10 @@ function Offcanvastool() {
 
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title>  <h3 className='p-2 m-2 '>Hello, sign in</h3></Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
+        
       <Categories/>
         </Offcanvas.Body>
       </Offcanvas>

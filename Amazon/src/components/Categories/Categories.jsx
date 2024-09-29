@@ -17,6 +17,7 @@ function Categories() {
         const response = await axios.get('https://fakestoreapi.com/products');
         const productData = response.data;
         setProducts(productData);
+        console.log(productData);
         
      
         const uniqueCategories = [...new Set(productData.map((product) => product.category))];
@@ -34,9 +35,9 @@ function Categories() {
   const Loadingcase = () => {
     return (
       <>
-      <div className=' d-flex flex-row flex-wrap gap-3'>
+      <div className=' d-flex flex-row flex-wrap gap-3 justify-content-center'>
       
-          <Skeleton height={256} width={250} />
+          <Skeleton  height={256} width={250} />
         
        
           <Skeleton height={256} width={250} />

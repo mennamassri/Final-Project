@@ -6,7 +6,7 @@ import Slide3 from '../../assets/SlideImg/Slide3.jpg';
 import Slide4 from '../../assets/SlideImg/Slide4.jpg';
 import Slide5 from '../../assets/SlideImg/Slide5.jpg';
 import Slide6 from '../../assets/SlideImg/Slide6.jpg';
-import Slide1Mb from '../../assets/SlideImg/‏‏Slide1Mb.jpg';
+import Slide1Mb from '../../assets/SlideImg/‏‏Slide1Mb2.jpg';
 import Slide2Mb from '../../assets/SlideImg/‏‏Slide2Mb.jpg';
 import Slide3Mb from '../../assets/SlideImg/Slide3Mb.jpg';
 import Slide4Mb from '../../assets/SlideImg/‏‏Slide4Mb.jpg';
