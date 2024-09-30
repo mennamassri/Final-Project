@@ -4,7 +4,9 @@ import  {BrowserRouter, Routes , Route} from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 import HomePage from './Pages/HomePage/HomePage'
 import CategoryPage from './Pages/CategoryPage/CatogoryPage'
-import Product from './Pages/ProductPage/ProductPage'
+import ProductsPage from './Pages/ProductsPage/ProductsPage'
+import Footer from './components/Footer/footer'
+import ProductDetailsPage from './Pages/ProductDetailsPage/ProductDetailsPage'
 function App() {
  
 
@@ -18,8 +20,11 @@ function App() {
 <Route path='/home'   element={<HomePage/>}  />
 <Route path='/category' element={<CategoryPage/>}/>
 <Route path='/category/:category' element={<CategoryPage />} />
-<Route path='/category/:category/product/:id' element={<Product/>}/>
+<Route path='/category/:category/product/:id' element={<ProductDetailsPage/>}/>
+<Route path='/product/:id' element={<ProductDetailsPage/>}/>
+<Route path='/products' element={<ProductsPage/>}/>
     </Routes>
+    <Footer/>
     </BrowserRouter>
   
     

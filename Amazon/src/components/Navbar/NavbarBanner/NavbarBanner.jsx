@@ -1,7 +1,7 @@
 import './NavbarBanner.css'
 import Offcanvastool from './offcanves'
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-
+import { Link } from 'react-router-dom';
 
 export default function NavbarBanner() {
     return (
@@ -13,7 +13,11 @@ export default function NavbarBanner() {
             <a href="#">Customer Service</a>
             <a href="#">Registry</a>
             <a href="#">Gift Cards</a>
-            <a href="#">Sell</a></div>
+            <a href="#">Sell</a>
+            <Link to={'/products'}>
+            <a href="#">All</a>
+            </Link>
+            </div>
            </div>
       
            <div className="navbarBanner bg-dark d-md-none  p-2 align-items-center ">
@@ -21,7 +25,9 @@ export default function NavbarBanner() {
             <a  href="#">Today Deals</a>
             <a href="#">Customer Service</a>
             <a href="#">Registry</a>
-           
+            <Link to={'/products'}>
+            <a href="#">All</a>
+            </Link>
             </div>
 
            </div>

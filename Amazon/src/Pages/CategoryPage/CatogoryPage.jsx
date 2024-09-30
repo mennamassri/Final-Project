@@ -46,7 +46,7 @@ function CatogoryPage() {
         </div>
       </div>
 
-      <div className="col-12 d-flex">
+      <div className="col-12 d-flex flex-wrap  justify-content-center">
         <div className="col-2 d-flex flex-column p-4 my-4">
           <h5>Department</h5>
           <h6>{category}</h6>
@@ -59,7 +59,7 @@ function CatogoryPage() {
             ))}
           </div>
         ) : (
-          <div className="col-10 d-flex flex-wrap justify-content-center gap-2 my-4">
+          <div className="col-10 d-flex flex-wrap justify-content-center  gap-2 my-4">
             {products.map((product) => (
               <Link
                 to={`/category/${category}/product/${product.id}`}

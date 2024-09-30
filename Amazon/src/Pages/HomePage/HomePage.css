@@ -1,50 +1,35 @@
+/* الحاوية الأساسية للصفحة */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* تأخذ كامل ارتفاع الشاشة */
+}
+
+/* الكاروسل وحاويته */
+.carousel-container {
+  flex-grow: 1; /* يجعل الكاروسل يأخذ المساحة المتاحة من الشاشة */
+  position: relative;
+}
 
 .carousel-item img {
-    width: 100%;         
-    height: 100vh;        
-    object-fit: cover; 
-    object-position: center;  
-    
-  }
+  width: 100%;         
+  height: auto; /* بدلاً من 100vh، دع الصورة تتكيف حسب المحتوى */
+  object-fit: cover; 
+  object-position: center;
+}
 
+/* الحاوية الإضافية */
+.additional-content {
+  padding: 20px;
+  background-color: #f0f0f0;
+  flex-shrink: 0; /* يمنعها من التمدد */
+}
 
-  .carousel-container {
-    position: relative;
-    
-   
-  }
-  
-  .carousel-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 1; 
-  }
-
-.carousel-container {
-    position: relative;
-   
-  
-  }
-  
-  .carousel-background img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover; 
-  }
-  
-
-  .categories {
-    position: absolute;
-    top: 0;
-    width: 100%;  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2; 
-    color: white; 
-  }
-  
- 
+/* الفوتر */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  flex-shrink: 0; /* يمنع الفوتر من التمدد */
+}

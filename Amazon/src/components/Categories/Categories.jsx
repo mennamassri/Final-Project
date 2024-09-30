@@ -59,7 +59,7 @@ function Categories() {
         <Loadingcase /> 
       ) : (
         categories.map((category, index) => (
-          <div key={index} className="category-section p-4">
+          <div key={index} className="category-section ">
             <h2 className="p-1 mx-3">{category}</h2>
             <div className="products-grid d-flex flex-wrap">
               {products
